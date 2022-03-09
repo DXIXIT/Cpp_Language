@@ -1,0 +1,16 @@
+This text file is mainly made to keep track of errors encountered during the making of this homework, or
+any sort of nuances when it comes to typing code in C++. This file, among other series of future files is
+mainly to and to get a better understading of the C++ programming language.
+
+1. If a function template is going to be used, apparently all of the types must be used that are defined
+   in it. Example:
+
+	template <typename T, typename U>
+	void funct(T); //This will throw an error.
+
+2. srand is epic and awesome
+
+3. The value passed into srand() is 1 by default, but (I think) if you are calling a function that uses
+   rand() inside the main function, you are (sort of?) seeding the rand function on the spot.
+
+4. Template functions are ALWAYS defined AND declared in the header file.
