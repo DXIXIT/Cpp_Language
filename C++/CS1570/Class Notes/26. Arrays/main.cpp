@@ -22,9 +22,23 @@ int main(void)
 
 	cout << s1[2] << endl;
 
+	//The following two lines will raise an error, either by the OS or by the compiler.
+	//The program will be terminated if this point is reached.
+	//This is known as segmentation fault, or segfault.
+	
+	/*
 	numarr1[51] = 45;
-
 	cout << numarr1[51] << endl;
+	*/
+
+	const int SIZE = 10;
+	int array[SIZE];
+
+	for (int i = 0; i < SIZE; ++i) //Initialize values in the array
+	{
+		array[i] = i;
+	}
+
 
 	return 0;
 }
